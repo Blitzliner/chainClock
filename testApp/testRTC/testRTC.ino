@@ -12,8 +12,8 @@
 #define CHAIN_LENGTH (CHAIN_MODULES * PITCH)
 #define STEPS_PER_SECOND ((float)CHAIN_LENGTH / (12.0*60.0*60.0))
 #define DIST_PER_STEP ((float)MOTOR_PINION_PERIMETER / (float)STEPS_PER_REVOLUTION)
-//#define DEBUG(func) func
-#define DEBUG(func) 
+#define DEBUG(func) func
+//#define DEBUG(func) 
 
 Stepper stepper(PIN_STEP, PIN_DIR, 10);
 static TimeType time;
